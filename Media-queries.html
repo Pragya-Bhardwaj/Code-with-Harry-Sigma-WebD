@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MEDIA QUERIES</title>
+<style>
+    body{
+        background-color: antiquewhite;
+    }
+    @media only screen and (max-width:575px){
+        body{
+            background-color: aquamarine;
+        }
+    }
+    @media only screen and (orientation:landscape)
+    {
+        body{
+            border: 2px solid black;
+        }
+    }
+    .box{
+        width: 144px;
+        height: 144px;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        padding: 3px;
+        margin: 3px;
+    }
+</style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+        
+        background-color: bisque;
+      }
+      .red{
+        background-color: aquamarine;
+      }
+      #green{
+        background-color: rgb(150, 202, 222);
+      }
+      /*child selector*/
+      div > p{
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+      /*discendent selector*/
+      div p{
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+      /*universal selector*/
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      /*pseudo selector*/
+      a:visited{
+        color:blueviolet
+      }
+      a:link{
+        color:blue
+      }
+      a:active{
+        background-color: red;
+      }
+      a:hover{
+        background-color: aquamarine;
+      }
+
+    </style>
+</head>
+<body>
+  <a href="https://www.google.com">Go to Google</a>
+    <h1>Some videos  and audios for the day</h1>
+    <h2>some videos for the day</h2>
+    <div>
+        <video width="239" src="1.mp3"></video>
+        <video width="239" src="2.mp3"></video>
+        <video width="239" src="3.mp3"></video>
+        
+    </div>
+    <h2>Some audios for the day</h2>
+    <div id="green">
+        <p>I am a para inside div</p>
+        <audio src="1.mp3"></audio>
+        <audio src="2.mp3"></audio>
+        <audio src="3.mp3"></audio>
+    </div>
+    <h1>CSS Selectors</h1>
+    <div class="red">
+      <article>
+        <p>
+          i am a para
+        </p>
+      </article>
+        
+        I am a div</div>
+</body>
+</html>

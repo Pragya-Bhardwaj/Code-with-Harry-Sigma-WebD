@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box:first-child{ 
+            background-color: red;
+
+        }*/
+        /* .box:first-line {
+            color: yellow;
+        } */
+         /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+         }
+          -- grouping of selectors --
+        p, a, .box ,[data-color="primary"]{
+            padding: 45px;
+        } */
+         /* .box:nth-child(even){
+            background-color: blueviolet;
+         } */
+          /* .box:nth-last-child(1){
+            background-color: red;
+          } */
+           
+          /* pseudo-elements */
+          .boxes::before{
+            content: "This is good";
+            color: brown;
+          }
+          .boxes::after{
+            content: "Sigma course is also good";
+            color: brown;
+          }
+
+          ::selection{
+            color:aqua;
+            background-color: black;
+          }
+          .box::first-letter{
+            color:peru;
+           font-size: 24px;
+          }
+          input::placeholder{
+            color:azure;
+            background-color: black;
+          }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary"="box">Hey I am a box. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, quidem
+            provident voluptate in laborum nihil natus quasi ea aliquid mollitia blanditiis eos qui! Fugiat aliquam quas
+            magnam rem pariatur, dicta repudiandae, quae quaerat sunt minus repellat nesciunt error quos quisquam
+            corporis perferendis autem, minima voluptate!</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>

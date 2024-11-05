@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolour Website</title>
+    <style>
+        :root{
+            --primary-color: rgb(248, 246, 216);
+            --secondary-color: rgb(211, 207, 152);
+            --text-color:black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", serif;
+        }
+        body{
+            background-color: var(--secondary-color);
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 12px 0;
+
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 14px;
+            font-weight: 600;
+        }
+        ul li a{
+            text-decoration: none;
+            color:var(--text-color);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Contact us</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
